@@ -3,19 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --layoutWidthMax: 1080px;
+  --columnPaddingNormal: 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.scn-container {
+  max-width: calc(var(--columnPaddingNormal) * 2 + var(--layoutWidth));
+  padding: var(--columnPaddingNormal);
+}
+
+@media (min-width: 1112px) {
+  html {
+      --layoutWidth: var(--layoutWidthMax);
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
