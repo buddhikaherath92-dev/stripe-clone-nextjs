@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-import { Sono, Trispace } from "next/font/google";
+import { sono, trispace } from "./_ui/fonts";
 import "./globals.css";
 import  Navbar  from '@/app/_components/advanced/navbar';
-
-const sono = Sono({
-  variable: "--font-sono",
-  subsets: ["latin"],
-});
-
-const trispace = Trispace({
-  variable: "--font-trispace",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Stripe Clone NextJs",
