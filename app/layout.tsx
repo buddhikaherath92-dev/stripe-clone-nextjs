@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { sono, trispace } from "./_ui/fonts";
+import { sono, trispace, roboto } from "./_ui/fonts";
 import "./globals.css";
 import  Navbar  from '@/app/_components/advanced/navbar';
 
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sono.variable} ${trispace.variable} antialiased`}
+        className={`${roboto.variable} ${sono.variable} ${trispace.variable} antialiased`}
       >
         <header>
             <Navbar></Navbar>
