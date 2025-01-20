@@ -11,6 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primaryText: "#425466",
+        buttonColor: "#0a2540"
       },
       fontFamily: {
         sono: ['Sono', 'sans-serif'],
